@@ -13,8 +13,8 @@ public class CalculadoraControladorTest {
     @Test
     public void getValorVariableTest() {
 	resultadoEsperado = prueba.getCadena();
-	// resultado = "Prueba de test del paquete Controlador";
-	resultado = "Texto pa reventar la prueba ;)";
+	resultado = "Prueba de test del paquete Controlador";
+	// resultado = "Texto pa reventar la prueba ;)";
 	org.junit.Assert.assertEquals(resultado, resultadoEsperado);
     }
 
