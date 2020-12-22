@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'net.saliman.cobertura' version '4.0.0'
 }
 
 repositories {
@@ -26,9 +27,8 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-}
-
-
-apply plugin: 'java'
-apply from: 'cobertura.gradle'  
+	
+	//COBERTURA
+	testRuntime "org.slf4j:slf4j-api:1.7.10"
+}  
 
