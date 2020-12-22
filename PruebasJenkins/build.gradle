@@ -6,19 +6,6 @@
  * User Manual available at https://docs.gradle.org/6.3/userguide/java_library_plugin.html
  */
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'net.saliman:gradle-cobertura-plugin:2.2.7'
-    }
-}
-
-allprojects {
-    apply plugin: 'net.saliman.cobertura'  
-}
-
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
@@ -39,4 +26,11 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+	
+	// Plugin Cobertura de Jenkins
+	classpath 'net.saliman:gradle-cobertura-plugin:2.2.7'
+}
+
+allprojects {
+    apply plugin: 'net.saliman.cobertura'  
 }
