@@ -28,7 +28,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 }
 
-allprojects {
-	apply plugin: 'java'
-    apply from: 'cobertura.gradle'  
-}
+
+apply plugin: 'java'
+apply from: 'cobertura.gradle'  
+
