@@ -26,11 +26,9 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-	
-	// Plugin Cobertura de Jenkins
-	classpath 'net.saliman:gradle-cobertura-plugin:2.2.7'
 }
 
 allprojects {
-    apply plugin: 'net.saliman.cobertura'  
+	apply plugin: 'java'
+    apply from: 'cobertura.gradle'  
 }
