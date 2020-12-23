@@ -9,7 +9,7 @@ dependencies {
 }
 
 def serFile="${project.buildDir}/cobertura.ser"
-def classes="${project.buildDir}/classes/java/main"
+def classes="${project.buildDir}/classes/main"
 def classesCopy="${classes}-copy"
 
 
