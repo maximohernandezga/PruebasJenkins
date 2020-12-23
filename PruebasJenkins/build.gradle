@@ -25,11 +25,7 @@ dependencies {
     implementation 'com.google.guava:guava:28.2-jre'
 
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
-	
-	// https://mvnrepository.com/artifact/net.sourceforge.cobertura/cobertura
-testCompile group: 'net.sourceforge.cobertura', name: 'cobertura', version: '1.9.4'
-	
+    testImplementation 'junit:junit:4.12'	
 }  
 
 apply plugin:'java'
