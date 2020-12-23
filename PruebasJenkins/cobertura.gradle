@@ -5,7 +5,7 @@ configurations{
 }
 
 dependencies {
-  coberturaRuntime 'net.sourceforge.cobertura:cobertura:1.9.4'
+  coberturaRuntime 'net.sourceforge.cobertura:cobertura:2.1.1'
 }
 
 def serFile="${project.buildDir}/cobertura.ser"
@@ -15,7 +15,7 @@ def classesCopy="${classes}-copy"
 
 task cobertura(type: Test){
   dependencies {
-    testRuntimeOnly 'net.sourceforge.cobertura:cobertura:1.9.4'
+    testRuntimeOnly 'net.sourceforge.cobertura:cobertura:2.1.1'
   }
 
   systemProperty "net.sourceforge.cobertura.datafile", serFile
